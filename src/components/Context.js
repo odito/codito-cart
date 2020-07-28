@@ -9,7 +9,7 @@ const ProductContext = React.createContext();
 
 state={
   navOpen:false,
-  cartOpen:true,
+  cartOpen:false,
   data:Data,
   cart:[],
   total:0,
