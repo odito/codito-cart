@@ -241,27 +241,27 @@ componentDidUpdate(){
     localStorage.setItem('dataCart', JSON.stringify(this.state.cart));
     localStorage.setItem('totalCart', JSON.stringify(this.state.total));
 
+    //  ....for the green color of products......
     // localStorage.setItem('dat', JSON.stringify(this.state.data));
 
-   
 }
 
 componentDidMount(){
     this.totalItems();
 
+     //  .....for the green color of products.......
 // const dat = JSON.parse(localStorage.getItem('dat'));
 // if(dat !==null){
 //   this.setState({
 //       data:dat
 //   })
 // }
+
+
    
-    
   const dataCart=JSON.parse(localStorage.getItem('dataCart'));
 
-
   if(dataCart !==null){
-    
     this.setState({
      cart:dataCart,
      
@@ -276,29 +276,6 @@ componentDidMount(){
 
  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

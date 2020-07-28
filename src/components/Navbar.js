@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {ProductConsumer} from './Context';
 import Cart from './Cart';
+import logo from '../img/logo.png';
 
 
 export default function Navbar() {
@@ -15,7 +16,8 @@ export default function Navbar() {
     
     <nav className="sticky">
         <div className="logo-btn">
-            <Link to="/" onClick={closeNavCart}>Logo</Link>
+            
+            <Link to="/" onClick={closeNavCart}><img src={logo} alt=""/> <span className="shoes"> shoes </span> addict</Link>
 
             <div className="cart hide" onClick={handleCartNav} > <i className="fas fa-shopping-cart"></i>
     <span>{cart.length}</span>

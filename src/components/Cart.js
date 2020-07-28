@@ -69,7 +69,7 @@ export default function Cart(props) {
         <h3 ><span> Total amount :</span>
          ${total>90 ?total:total+shipping}</h3>
           
-           <div className="payment" onClick={closeNavCart}><Link to=''>Payment</Link></div>
+           <div className="payment" onClick={closeNavCart}><Link to='/payment'>Payment</Link></div>
   
        </div>
   
